@@ -1,0 +1,2017 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sri Trishul Paper Product — Premium paper & stationery supplies in Vijayawada. Copier paper, art paper, craft paper, sticker paper, notebook paper & more."
+    />
+    <title>Sri Trishul Paper Product | Premium Paper & Stationery</title>
+
+    <style>
+      :root {
+        --maroon: #7a0f14;
+        --ivory: #faf7f2;
+        --gold: #c9a227;
+        --charcoal: #2e2e2e;
+        --muted: #6b6b6b;
+        --card: #ffffff;
+        --ring: rgba(122, 15, 20, 0.22);
+        --shadow: 0 18px 50px rgba(17, 17, 17, 0.1);
+        --shadow2: 0 10px 30px rgba(17, 17, 17, 0.08);
+        --radius: 18px;
+        --radius2: 14px;
+        --max: 1180px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Inter,
+          Helvetica,
+          Arial,
+          "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--charcoal);
+        background:
+          radial-gradient(
+            1200px 700px at 80% -10%,
+            rgba(201, 162, 39, 0.2),
+            transparent 55%
+          ),
+          radial-gradient(
+            900px 600px at 10% 10%,
+            rgba(122, 15, 20, 0.1),
+            transparent 55%
+          ),
+          linear-gradient(180deg, var(--ivory), #fff 40%, var(--ivory));
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(12px);
+        background: rgba(250, 247, 242, 0.7);
+        border-bottom: 1px solid rgba(46, 46, 46, 0.08);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+        gap: 14px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 240px;
+      }
+      .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background:
+          radial-gradient(
+            18px 18px at 30% 30%,
+            rgba(201, 162, 39, 0.65),
+            transparent 55%
+          ),
+          linear-gradient(135deg, var(--maroon), #3b0508);
+        box-shadow: 0 10px 25px rgba(122, 15, 20, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+      .logo:before {
+        content: "";
+        position: absolute;
+        inset: 9px 11px;
+        border-radius: 10px;
+        border: 2px solid rgba(250, 247, 242, 0.85);
+        transform: rotate(12deg);
+      }
+      .brand h1 {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .brand small {
+        display: block;
+        font-size: 12px;
+        color: var(--muted);
+        letter-spacing: 0.02em;
+        margin-top: 2px;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        justify-content: center;
+        flex: 1;
+      }
+      .links a {
+        font-size: 13px;
+        padding: 8px 10px;
+        border-radius: 12px;
+        color: rgba(46, 46, 46, 0.86);
+        transition: all 0.2s ease;
+      }
+      .links a:hover {
+        background: rgba(122, 15, 20, 0.08);
+        color: var(--maroon);
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 240px;
+        justify-content: flex-end;
+      }
+
+      .btn {
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        background: rgba(255, 255, 255, 0.7);
+        padding: 10px 12px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(17, 17, 17, 0.06);
+        transition:
+          transform 0.16s ease,
+          box-shadow 0.16s ease,
+          background 0.16s ease,
+          border-color 0.16s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 13px;
+        color: rgba(46, 46, 46, 0.92);
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: var(--shadow2);
+        border-color: rgba(122, 15, 20, 0.22);
+      }
+      .btn.primary {
+        background: linear-gradient(135deg, var(--maroon), #4d070b);
+        color: var(--ivory);
+        border-color: rgba(122, 15, 20, 0.4);
+        box-shadow: 0 18px 45px rgba(122, 15, 20, 0.18);
+      }
+      .btn.primary:hover {
+        box-shadow: 0 20px 50px rgba(122, 15, 20, 0.22);
+      }
+      .btn.gold {
+        background: linear-gradient(
+          135deg,
+          rgba(201, 162, 39, 0.92),
+          rgba(201, 162, 39, 0.66)
+        );
+        border-color: rgba(201, 162, 39, 0.55);
+        color: #2b2208;
+        font-weight: 700;
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        background: rgba(255, 255, 255, 0.65);
+        border-radius: 999px;
+        padding: 8px 10px;
+        font-size: 12px;
+        color: rgba(46, 46, 46, 0.82);
+      }
+
+      .cart-count {
+        min-width: 20px;
+        height: 20px;
+        border-radius: 999px;
+        background: rgba(201, 162, 39, 0.9);
+        color: #1e1604;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 800;
+        padding: 0 6px;
+      }
+
+      /* Hero */
+      .hero {
+        padding: 38px 0 22px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 22px;
+        align-items: stretch;
+      }
+      .hero-card {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        position: relative;
+      }
+      .hero-card .inner {
+        padding: 28px 26px;
+      }
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--maroon);
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .kicker:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        border-radius: 6px;
+        background: linear-gradient(
+          135deg,
+          var(--gold),
+          rgba(201, 162, 39, 0.35)
+        );
+        box-shadow: 0 10px 22px rgba(201, 162, 39, 0.22);
+      }
+      .hero h2 {
+        margin: 12px 0 10px;
+        font-size: clamp(28px, 3.2vw, 44px);
+        line-height: 1.08;
+        letter-spacing: -0.02em;
+      }
+      .hero p {
+        margin: 0 0 18px;
+        color: rgba(46, 46, 46, 0.75);
+        font-size: 15px;
+        max-width: 58ch;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+      .trust {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .hero-card .bg {
+        position: absolute;
+        inset: -60px -80px auto auto;
+        width: 280px;
+        height: 280px;
+        border-radius: 999px;
+        background:
+          radial-gradient(
+            circle at 30% 30%,
+            rgba(201, 162, 39, 0.32),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at 60% 60%,
+            rgba(122, 15, 20, 0.18),
+            transparent 58%
+          );
+        filter: blur(0px);
+        opacity: 0.95;
+        pointer-events: none;
+      }
+
+      /* Right hero panel */
+      .side {
+        background: rgba(255, 255, 255, 0.65);
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow2);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .side h3 {
+        margin: 2px 0 0;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba(46, 46, 46, 0.8);
+      }
+      .side .line {
+        padding: 12px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(46, 46, 46, 0.08);
+        background: rgba(250, 247, 242, 0.7);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 13px;
+        color: rgba(46, 46, 46, 0.78);
+      }
+      .side .line strong {
+        color: rgba(46, 46, 46, 0.92);
+      }
+      .side .mini-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      /* Sections */
+      section {
+        padding: 34px 0;
+      }
+      .section-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .section-head h2 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+      }
+      .section-head p {
+        margin: 0;
+        color: rgba(46, 46, 46, 0.7);
+        font-size: 13px;
+        max-width: 58ch;
+      }
+
+      /* Catalog */
+      .toolbar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 12px 0 16px;
+        align-items: center;
+      }
+      .search {
+        flex: 1;
+        min-width: 220px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        background: rgba(255, 255, 255, 0.65);
+      }
+      .search input {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        width: 100%;
+        font-size: 14px;
+      }
+      .select {
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        background: rgba(255, 255, 255, 0.65);
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease,
+          border-color 0.18s ease;
+        position: relative;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+        border-color: rgba(122, 15, 20, 0.18);
+      }
+      .thumb {
+        height: 140px;
+        background:
+          radial-gradient(
+            120px 120px at 30% 30%,
+            rgba(201, 162, 39, 0.28),
+            transparent 60%
+          ),
+          radial-gradient(
+            120px 120px at 70% 70%,
+            rgba(122, 15, 20, 0.14),
+            transparent 60%
+          ),
+          linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.75),
+            rgba(250, 247, 242, 0.65)
+          );
+        border-bottom: 1px solid rgba(46, 46, 46, 0.08);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 14px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 10px;
+        font-size: 12px;
+        border-radius: 999px;
+        background: rgba(122, 15, 20, 0.1);
+        color: var(--maroon);
+        border: 1px solid rgba(122, 15, 20, 0.16);
+        font-weight: 700;
+      }
+      .thumb .gsm {
+        font-size: 12px;
+        color: rgba(46, 46, 46, 0.72);
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        padding: 7px 10px;
+        border-radius: 999px;
+      }
+      .content {
+        padding: 14px 14px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+      }
+      .title-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .content h3 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      .muted {
+        color: rgba(46, 46, 46, 0.7);
+        font-size: 13px;
+        margin: 0;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        background: rgba(250, 247, 242, 0.75);
+        color: rgba(46, 46, 46, 0.76);
+      }
+      .price {
+        font-weight: 900;
+        letter-spacing: -0.01em;
+        color: rgba(46, 46, 46, 0.92);
+        white-space: nowrap;
+      }
+      .card-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 4px;
+      }
+
+      /* About + features */
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .panel {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(46, 46, 46, 0.1);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow2);
+        padding: 18px;
+      }
+      .panel h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+      .panel ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: rgba(46, 46, 46, 0.76);
+      }
+      .panel li {
+        margin: 8px 0;
+      }
+
+      /* Contact */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+      label {
+        font-size: 12px;
+        color: rgba(46, 46, 46, 0.7);
+      }
+      input,
+      textarea {
+        padding: 11px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(46, 46, 46, 0.12);
+        background: rgba(255, 255, 255, 0.7);
+        outline: none;
+        font-size: 14px;
+      }
+      input:focus,
+      textarea:focus {
+        box-shadow: 0 0 0 5px var(--ring);
+        border-color: rgba(122, 15, 20, 0.35);
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .map {
+        width: 100%;
+        height: 340px;
+        border: 0;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow2);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      /* Modal (Cart) */
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(20, 20, 20, 0.35);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        z-index: 200;
+      }
+      .modal.open {
+        display: flex;
+      }
+      .modal-card {
+        width: min(760px, 100%);
+        max-height: 86vh;
+        overflow: auto;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(46, 46, 46, 0.16);
+        border-radius: 22px;
+        box-shadow: 0 40px 120px rgba(0, 0, 0, 0.25);
+        padding: 16px;
+        backdrop-filter: blur(10px);
+      }
+      .modal-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 6px 6px 14px;
+        border-bottom: 1px solid rgba(46, 46, 46, 0.1);
+      }
+      .modal-head h3 {
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .close {
+        border: 1px solid rgba(46, 46, 46, 0.12);
+        background: rgba(250, 247, 242, 0.8);
+        border-radius: 14px;
+        padding: 10px 12px;
+        cursor: pointer;
+        font-weight: 800;
+      }
+      .cart {
+        padding: 14px 6px 6px;
+      }
+      .cart table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      .cart th,
+      .cart td {
+        padding: 10px 8px;
+        border-bottom: 1px solid rgba(46, 46, 46, 0.08);
+        vertical-align: middle;
+      }
+      .cart th {
+        font-size: 12px;
+        color: rgba(46, 46, 46, 0.7);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: left;
+      }
+      .qty {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .qty button {
+        width: 30px;
+        height: 30px;
+        border-radius: 12px;
+        border: 1px solid rgba(46, 46, 46, 0.12);
+        background: rgba(250, 247, 242, 0.8);
+        cursor: pointer;
+        font-weight: 900;
+      }
+      .cart-foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 14px 6px 6px;
+      }
+      .total {
+        font-size: 14px;
+        color: rgba(46, 46, 46, 0.74);
+      }
+      .total strong {
+        display: block;
+        font-size: 22px;
+        color: rgba(46, 46, 46, 0.92);
+        letter-spacing: -0.02em;
+      }
+
+      footer {
+        padding: 28px 0 34px;
+        color: rgba(46, 46, 46, 0.72);
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        gap: 14px;
+      }
+      footer h4 {
+        margin: 0 0 10px;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(46, 46, 46, 0.8);
+      }
+      .foot-links a {
+        display: block;
+        padding: 6px 0;
+        color: rgba(46, 46, 46, 0.72);
+      }
+      .foot-links a:hover {
+        color: var(--maroon);
+      }
+      .fine {
+        border-top: 1px solid rgba(46, 46, 46, 0.1);
+        margin-top: 16px;
+        padding-top: 14px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      /* Floating actions */
+      .float {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 80;
+      }
+      .fab {
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+        border: 1px solid rgba(46, 46, 46, 0.12);
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: var(--shadow2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition:
+          transform 0.16s ease,
+          box-shadow 0.16s ease;
+      }
+      .fab:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+      }
+      .fab.primary {
+        background: linear-gradient(135deg, var(--maroon), #4d070b);
+        border-color: rgba(122, 15, 20, 0.35);
+      }
+      .fab.primary svg {
+        fill: var(--ivory);
+      }
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .links {
+          display: none;
+        }
+        .brand {
+          min-width: unset;
+        }
+        .nav-right {
+          min-width: unset;
+        }
+      }
+      @media (max-width: 560px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+        .nav-right .btn:not(.primary) {
+          display: none;
+        }
+        .hero-card .inner {
+          padding: 22px 18px;
+        }
+        .side {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="nav">
+          <a
+            class="brand"
+            href="#top"
+            aria-label="Sri Trishul Paper Product Home"
+          >
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+              <h1>SRI TRISHUL PAPER PRODUCT</h1>
+              <small>Paper • Stationery • Bulk Supplies</small>
+            </div>
+          </a>
+
+          <nav class="links" aria-label="Primary">
+            <a href="#shop">Shop</a>
+            <a href="#bulk">Bulk Orders</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="nav-right">
+            <span class="pill" title="GSTIN">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 7h16M7 7v14m10-14v14M6 21h12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M9 3h6l2 4H7l2-4Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              GSTIN: <strong>37BNMPA8130M1ZQ</strong>
+            </span>
+
+            <button
+              class="btn"
+              id="cartBtn"
+              type="button"
+              aria-label="Open cart"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6 7h15l-1.5 8.5a2 2 0 0 1-2 1.5H9a2 2 0 0 1-2-1.6L5 3H2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              Cart <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <a class="btn primary" href="#shop">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 6v12M6 12h12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-grid">
+            <div class="hero-card">
+              <div class="bg" aria-hidden="true"></div>
+              <div class="inner">
+                <div class="kicker">Premium • Reliable • Local</div>
+                <h2>
+                  Elegant paper & stationery supplies for business, schools, and
+                  creators.
+                </h2>
+                <p>
+                  Sri Trishul Paper Product delivers quality paper
+                  products—copier paper, art paper, craft paper, sticker paper,
+                  notebook paper, and more—right here in Vijayawada.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn primary" href="#shop">Browse Products</a>
+                  <a class="btn gold" href="#bulk">Request Bulk Quote</a>
+                  <button
+                    class="btn"
+                    type="button"
+                    id="downloadCatalogBtn"
+                    title="Downloads a simple text catalog"
+                  >
+                    Download Mini Catalog
+                  </button>
+                </div>
+
+                <div class="trust" aria-label="Highlights">
+                  <span class="pill">✅ Trusted local supply</span>
+                  <span class="pill">📦 Bulk availability</span>
+                  <span class="pill">💬 WhatsApp ordering</span>
+                  <span class="pill">🧾 GST billing support</span>
+                </div>
+              </div>
+            </div>
+
+            <aside class="side" aria-label="Quick info">
+              <h3>Quick Contact</h3>
+              <div class="line">
+                <span>Phone</span>
+                <strong><a href="tel:+919848974666">+91 9848974666</a></strong>
+              </div>
+              <div class="line">
+                <span>Owner</span>
+                <strong>A. Adinarayana</strong>
+              </div>
+              <div class="line">
+                <span>Address</span>
+                <strong>Bhavanipuram, Vijayawada</strong>
+              </div>
+              <div class="mini-actions">
+                <a class="btn" href="tel:+919848974666">Call Now</a>
+                <a class="btn" id="waTop" href="#">WhatsApp</a>
+                <a class="btn" href="#contact">Get Directions</a>
+              </div>
+
+              <h3 style="margin-top: 2px">Popular Categories</h3>
+              <div class="meta">
+                <a class="chip" href="#shop" data-filter="Copier Paper"
+                  >Copier Paper</a
+                >
+                <a class="chip" href="#shop" data-filter="Sticker Paper"
+                  >Sticker Paper</a
+                >
+                <a class="chip" href="#shop" data-filter="Craft Paper"
+                  >Craft Paper</a
+                >
+                <a class="chip" href="#shop" data-filter="Art Paper"
+                  >Art Paper</a
+                >
+                <a class="chip" href="#shop" data-filter="Notebook Paper"
+                  >Notebook Paper</a
+                >
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOP -->
+      <section id="shop">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Shop Products</h2>
+              <p>
+                Elegant catalog with quick add-to-cart. For exact pricing &
+                availability, place an order request via WhatsApp or the form.
+              </p>
+            </div>
+            <div class="pill" title="Note">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 7v6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12 17h.01"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Demo checkout → sends WhatsApp message
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div class="search" role="search">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 21l-4.35-4.35"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search products… (e.g., A4, 80 GSM, sticker)"
+              />
+            </div>
+
+            <select
+              id="categorySelect"
+              class="select"
+              aria-label="Filter by category"
+            >
+              <option value="All">All Categories</option>
+              <option value="Copier Paper">Copier Paper</option>
+              <option value="Art Paper">Art Paper</option>
+              <option value="Craft Paper">Craft Paper</option>
+              <option value="Sticker Paper">Sticker Paper</option>
+              <option value="Notebook Paper">Notebook Paper</option>
+              <option value="Printing Papers">Printing Papers</option>
+            </select>
+
+            <select id="sortSelect" class="select" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low → High</option>
+              <option value="price-desc">Price: High → Low</option>
+              <option value="name-asc">Name: A → Z</option>
+            </select>
+          </div>
+
+          <div class="grid" id="productGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- BULK -->
+      <section id="bulk">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Bulk Orders</h2>
+              <p>
+                For schools, offices, print shops, and institutions. Send
+                quantity & preferred GSM/sizes to get a quick quote.
+              </p>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="panel">
+              <h3>What you can request</h3>
+              <ul>
+                <li>A4/A3 copier paper in bulk, multiple GSM options</li>
+                <li>Sticker paper (labels, sheets) for printing needs</li>
+                <li>Art & craft paper for institutions and workshops</li>
+                <li>Notebook paper and custom supply requirements</li>
+                <li>GST invoice support for business purchases</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Request a Bulk Quote</h3>
+              <form id="bulkForm">
+                <div class="field">
+                  <label for="bName">Your Name</label>
+                  <input id="bName" required placeholder="Enter your name" />
+                </div>
+                <div class="field">
+                  <label for="bBiz">Business / School Name (optional)</label>
+                  <input
+                    id="bBiz"
+                    placeholder="Company / School / Print shop"
+                  />
+                </div>
+                <div class="field">
+                  <label for="bPhone">Phone</label>
+                  <input
+                    id="bPhone"
+                    required
+                    inputmode="tel"
+                    placeholder="Your mobile number"
+                  />
+                </div>
+                <div class="field">
+                  <label for="bDetails">What do you need?</label>
+                  <textarea
+                    id="bDetails"
+                    required
+                    placeholder="Example: A4 copier paper, 80 GSM, 50 boxes. Delivery needed in 2 days."
+                  ></textarea>
+                </div>
+                <button class="btn primary" type="submit">
+                  Send Quote Request (WhatsApp)
+                </button>
+              </form>
+              <p class="muted" style="margin-top: 10px">
+                This sends a WhatsApp message to the shop number. You can edit
+                before sending.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>About Sri Trishul Paper Product</h2>
+              <p>
+                A trusted local paper supplier serving Vijayawada with quality
+                products, consistent stock, and customer-first service.
+              </p>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="panel">
+              <h3>Our promise</h3>
+              <p class="muted">
+                We focus on supplying paper that looks great, prints well, and
+                performs consistently—whether you’re running daily office
+                operations, printing in volume, or crafting something special.
+              </p>
+              <div class="meta" style="margin-top: 12px">
+                <span class="chip">Quality-first sourcing</span>
+                <span class="chip">Bulk readiness</span>
+                <span class="chip">Fast local support</span>
+                <span class="chip">GST billing</span>
+              </div>
+            </div>
+            <div class="panel">
+              <h3>Store details</h3>
+              <p class="muted" style="margin-bottom: 10px">
+                <strong>Owner:</strong> A. Adinarayana<br />
+                <strong>Phone:</strong>
+                <a href="tel:+919848974666">+91 9848974666</a><br />
+                <strong>GSTIN:</strong> 37BNMPA8130M1ZQ
+              </p>
+              <p class="muted" style="margin: 0">
+                <strong>Address:</strong><br />
+                # 76-8/9-12g, Sri Padmaja Towers, Beside Swathi Theatre,<br />
+                M.P. Das Street, Bhavanipuram, Vijayawada – 520012.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Contact & Directions</h2>
+              <p>
+                Call, WhatsApp, or send a message. You can also copy the address
+                and open in Google Maps.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="panel">
+              <h3>Send a Message</h3>
+              <form id="contactForm">
+                <div class="field">
+                  <label for="cName">Name</label>
+                  <input id="cName" required placeholder="Your name" />
+                </div>
+                <div class="field">
+                  <label for="cPhone">Phone</label>
+                  <input
+                    id="cPhone"
+                    required
+                    inputmode="tel"
+                    placeholder="Your mobile number"
+                  />
+                </div>
+                <div class="field">
+                  <label for="cMsg">Message</label>
+                  <textarea
+                    id="cMsg"
+                    required
+                    placeholder="Tell us what you need (size, GSM, quantity, etc.)"
+                  ></textarea>
+                </div>
+                <button class="btn primary" type="submit">
+                  Send (WhatsApp)
+                </button>
+                <button class="btn" type="button" id="copyAddressBtn">
+                  Copy Address
+                </button>
+              </form>
+            </div>
+
+            <div>
+              <iframe
+                class="map"
+                title="Map to Sri Trishul Paper Product (search-based map)"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Sri%20Padmaja%20Towers%20Beside%20Swathi%20Theatre%20Bhavanipuram%20Vijayawada&output=embed"
+              >
+              </iframe>
+              <div
+                style="
+                  display: flex;
+                  gap: 10px;
+                  flex-wrap: wrap;
+                  margin-top: 12px;
+                "
+              >
+                <a class="btn" href="tel:+919848974666">Call Now</a>
+                <a class="btn" id="waBottom" href="#">WhatsApp</a>
+                <a
+                  class="btn"
+                  id="openMapsBtn"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  >Open in Google Maps</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="wrap">
+          <div class="footer-grid">
+            <div>
+              <h4>Sri Trishul Paper Product</h4>
+              <p class="muted" style="margin: 0 0 10px">
+                Premium paper & stationery supply for printing, creativity, and
+                business needs in Vijayawada.
+              </p>
+              <div class="meta">
+                <span class="chip">Copier Paper</span>
+                <span class="chip">Art Paper</span>
+                <span class="chip">Craft Paper</span>
+                <span class="chip">Sticker Paper</span>
+                <span class="chip">Notebook Paper</span>
+              </div>
+            </div>
+
+            <div class="foot-links">
+              <h4>Quick Links</h4>
+              <a href="#shop">Shop</a>
+              <a href="#bulk">Bulk Orders</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+
+            <div>
+              <h4>Contact</h4>
+              <p class="muted" style="margin: 0">
+                <strong>Phone:</strong>
+                <a href="tel:+919848974666">+91 9848974666</a><br />
+                <strong>GSTIN:</strong> 37BNMPA8130M1ZQ<br />
+                <strong>Address:</strong> Sri Padmaja Towers, Beside Swathi
+                Theatre, M.P. Das Street, Bhavanipuram, Vijayawada – 520012.
+              </p>
+            </div>
+          </div>
+
+          <div class="fine">
+            <span
+              >© <span id="year"></span> Sri Trishul Paper Product — All Rights
+              Reserved</span
+            >
+            <span class="muted">Hosted on GitHub Pages • Single-page demo</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Floating action buttons -->
+    <div class="float" aria-label="Quick actions">
+      <button class="fab" id="fabCart" title="Open cart" aria-label="Open cart">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M6 7h15l-1.5 8.5a2 2 0 0 1-2 1.5H9a2 2 0 0 1-2-1.6L5 3H2"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+      <a
+        class="fab primary"
+        id="fabWa"
+        href="#"
+        title="WhatsApp"
+        aria-label="WhatsApp"
+      >
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.5-4.7A8.5 8.5 0 1 1 20.5 11.7Zm-5.2 3.3c-.2.6-1.1 1.1-1.5 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.4-4.2-4.5-4.4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.3.5-.4.7-.4h.5c.1 0 .4 0 .6.4.2.4.7 1.7.8 1.8.1.2.1.4 0 .6-.1.2-.1.4-.3.6-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.9 1.5 1.9 2.4 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.6-.1.2.1 1.6.8 1.9.9.3.2.5.2.6.3.1.1.1.6-.1 1.1Z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- CART MODAL -->
+    <div
+      class="modal"
+      id="cartModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Cart"
+    >
+      <div class="modal-card">
+        <div class="modal-head">
+          <h3>Your Cart</h3>
+          <button class="close" id="closeCartBtn" type="button">Close</button>
+        </div>
+
+        <div class="cart" id="cartBody"></div>
+
+        <div class="cart-foot">
+          <div class="total">
+            Estimated total
+            <strong id="cartTotal">₹0</strong>
+            <span class="muted"
+              >Final price may vary by brand/availability. Confirm via
+              WhatsApp.</span
+            >
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <button class="btn" id="clearCartBtn" type="button">Clear</button>
+            <button class="btn primary" id="checkoutBtn" type="button">
+              Checkout via WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // =========================
+      // CONFIG
+      // =========================
+      const SHOP_NAME = "Sri Trishul Paper Product";
+      const OWNER = "A. Adinarayana";
+      const PHONE_E164 = "919848974666"; // WhatsApp needs country code, no plus sign
+      const PHONE_DISPLAY = "+91 9848974666";
+      const GSTIN = "37BNMPA8130M1ZQ";
+      const ADDRESS =
+        "# 76-8/9-12g, Sri Padmaja Towers, Beside Swathi Theatre, M.P. Das Street, Bhavanipuram, Vijayawada – 520012";
+      const MAPS_QUERY =
+        "Sri Padmaja Towers Beside Swathi Theatre Bhavanipuram Vijayawada";
+
+      // Demo catalog (edit as you want)
+      const PRODUCTS = [
+        {
+          id: "cp-a4-70",
+          name: "Copier Paper A4",
+          category: "Copier Paper",
+          price: 275, // demo
+          gsm: "70 GSM",
+          sizes: ["A4"],
+          tags: ["Office", "Printing", "Smooth feed"],
+          note: "Good everyday printing, compatible with most printers.",
+        },
+        {
+          id: "cp-a4-80",
+          name: "Copier Paper A4 Premium",
+          category: "Copier Paper",
+          price: 315, // demo
+          gsm: "80 GSM",
+          sizes: ["A4"],
+          tags: ["Premium", "Sharp print", "High opacity"],
+          note: "Crisper text & better opacity for professional documents.",
+        },
+        {
+          id: "pp-a3-80",
+          name: "Printing Paper A3",
+          category: "Printing Papers",
+          price: 520, // demo
+          gsm: "80 GSM",
+          sizes: ["A3"],
+          tags: ["Large format", "Reports", "Posters"],
+          note: "For A3 printing and larger layouts.",
+        },
+        {
+          id: "ap-160",
+          name: "Art Paper",
+          category: "Art Paper",
+          price: 140, // demo
+          gsm: "160 GSM",
+          sizes: ["A4", "A3"],
+          tags: ["Artwork", "Sketch", "Vibrant color"],
+          note: "Great for art projects and presentation sheets.",
+        },
+        {
+          id: "craft-180",
+          name: "Craft Paper",
+          category: "Craft Paper",
+          price: 160, // demo
+          gsm: "180 GSM",
+          sizes: ["A4"],
+          tags: ["DIY", "School", "Cut & fold"],
+          note: "Sturdy paper for crafts, models, and school work.",
+        },
+        {
+          id: "sticker-a4",
+          name: "Sticker Paper A4",
+          category: "Sticker Paper",
+          price: 230, // demo
+          gsm: "Self-adhesive",
+          sizes: ["A4"],
+          tags: ["Labels", "Branding", "Easy peel"],
+          note: "Ideal for labels, packaging, and custom stickers.",
+        },
+        {
+          id: "note-ruled",
+          name: "Notebook Paper (Ruled)",
+          category: "Notebook Paper",
+          price: 95, // demo
+          gsm: "—",
+          sizes: ["A4"],
+          tags: ["Students", "Daily use", "Smooth writing"],
+          note: "Reliable writing paper for notebooks and records.",
+        },
+        {
+          id: "maplitho-100",
+          name: "Maplitho Paper",
+          category: "Printing Papers",
+          price: 190, // demo
+          gsm: "100 GSM",
+          sizes: ["A4"],
+          tags: ["Print shops", "Flyers", "Documents"],
+          note: "Popular for printing shops and quality document work.",
+        },
+      ];
+
+      // =========================
+      // STATE
+      // =========================
+      const state = {
+        search: "",
+        category: "All",
+        sort: "featured",
+        cart: loadCart(),
+      };
+
+      // =========================
+      // HELPERS
+      // =========================
+      function money(n) {
+        return "₹" + Number(n || 0).toLocaleString("en-IN");
+      }
+
+      function saveCart() {
+        localStorage.setItem("stpp_cart_v1", JSON.stringify(state.cart));
+        updateCartBadge();
+      }
+
+      function loadCart() {
+        try {
+          const raw = localStorage.getItem("stpp_cart_v1");
+          return raw ? JSON.parse(raw) : {};
+        } catch (e) {
+          return {};
+        }
+      }
+
+      function cartItems() {
+        return Object.entries(state.cart)
+          .map(([id, qty]) => {
+            const p = PRODUCTS.find((x) => x.id === id);
+            return p ? { ...p, qty } : null;
+          })
+          .filter(Boolean);
+      }
+
+      function cartTotal() {
+        return cartItems().reduce(
+          (sum, item) => sum + item.price * item.qty,
+          0,
+        );
+      }
+
+      function updateCartBadge() {
+        const count = Object.values(state.cart).reduce((a, b) => a + b, 0);
+        document.getElementById("cartCount").textContent = count;
+      }
+
+      function setCategory(cat) {
+        state.category = cat;
+        document.getElementById("categorySelect").value = cat;
+        renderProducts();
+      }
+
+      function buildWhatsAppLink(message) {
+        const encoded = encodeURIComponent(message);
+        return `https://wa.me/${PHONE_E164}?text=${encoded}`;
+      }
+
+      // =========================
+      // RENDER PRODUCTS
+      // =========================
+      function getFilteredProducts() {
+        let list = [...PRODUCTS];
+
+        const q = state.search.trim().toLowerCase();
+        if (q) {
+          list = list.filter((p) => {
+            const hay =
+              `${p.name} ${p.category} ${p.gsm} ${p.sizes.join(" ")} ${p.tags.join(" ")} ${p.note}`.toLowerCase();
+            return hay.includes(q);
+          });
+        }
+
+        if (state.category !== "All") {
+          list = list.filter((p) => p.category === state.category);
+        }
+
+        switch (state.sort) {
+          case "price-asc":
+            list.sort((a, b) => a.price - b.price);
+            break;
+          case "price-desc":
+            list.sort((a, b) => b.price - a.price);
+            break;
+          case "name-asc":
+            list.sort((a, b) => a.name.localeCompare(b.name));
+            break;
+          default:
+            // featured: keep as-is
+            break;
+        }
+
+        return list;
+      }
+
+      function renderProducts() {
+        const grid = document.getElementById("productGrid");
+        const list = getFilteredProducts();
+
+        if (list.length === 0) {
+          grid.innerHTML = `
+          <div class="panel" style="grid-column:1/-1;">
+            <h3>No products found</h3>
+            <p class="muted">Try a different search keyword or select another category.</p>
+          </div>`;
+          return;
+        }
+
+        grid.innerHTML = list
+          .map(
+            (p) => `
+        <article class="card" aria-label="${escapeHtml(p.name)}">
+          <div class="thumb">
+            <span class="badge">${escapeHtml(p.category)}</span>
+            <span class="gsm">${escapeHtml(p.gsm)}</span>
+          </div>
+          <div class="content">
+            <div class="title-row">
+              <h3>${escapeHtml(p.name)}</h3>
+              <div class="price" title="Demo price">${money(p.price)}</div>
+            </div>
+            <p class="muted">${escapeHtml(p.note)}</p>
+            <div class="meta">
+              ${p.sizes.map((s) => `<span class="chip">${escapeHtml(s)}</span>`).join("")}
+              ${p.tags
+                .slice(0, 2)
+                .map((t) => `<span class="chip">${escapeHtml(t)}</span>`)
+                .join("")}
+            </div>
+            <div class="card-actions">
+              <button class="btn primary" type="button" onclick="addToCart('${p.id}')">Add to Cart</button>
+              <button class="btn" type="button" onclick="quickEnquiry('${p.id}')">Quick Enquiry</button>
+            </div>
+          </div>
+        </article>
+      `,
+          )
+          .join("");
+      }
+
+      function escapeHtml(str) {
+        return String(str)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      // =========================
+      // CART ACTIONS
+      // =========================
+      function addToCart(id) {
+        state.cart[id] = (state.cart[id] || 0) + 1;
+        saveCart();
+        toast("Added to cart");
+      }
+
+      function removeFromCart(id) {
+        delete state.cart[id];
+        saveCart();
+        renderCart();
+      }
+
+      function changeQty(id, delta) {
+        const next = (state.cart[id] || 0) + delta;
+        if (next <= 0) delete state.cart[id];
+        else state.cart[id] = next;
+        saveCart();
+        renderCart();
+      }
+
+      function clearCart() {
+        state.cart = {};
+        saveCart();
+        renderCart();
+      }
+
+      function openCart() {
+        document.getElementById("cartModal").classList.add("open");
+        renderCart();
+      }
+
+      function closeCart() {
+        document.getElementById("cartModal").classList.remove("open");
+      }
+
+      function renderCart() {
+        const body = document.getElementById("cartBody");
+        const items = cartItems();
+
+        if (items.length === 0) {
+          body.innerHTML = `
+          <div class="panel">
+            <h3>Your cart is empty</h3>
+            <p class="muted">Add products from the catalog. Checkout will send your list on WhatsApp.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn primary" href="#shop" onclick="closeCart()">Browse Products</a>
+              <a class="btn" href="#bulk" onclick="closeCart()">Bulk Orders</a>
+            </div>
+          </div>
+        `;
+          document.getElementById("cartTotal").textContent = money(0);
+          return;
+        }
+
+        body.innerHTML = `
+        <table aria-label="Cart items">
+          <thead>
+            <tr>
+              <th style="width:40%;">Item</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th style="width:160px;">Qty</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            ${items
+              .map(
+                (it) => `
+              <tr>
+                <td><strong>${escapeHtml(it.name)}</strong><div class="muted">${escapeHtml(it.gsm)} • ${escapeHtml(it.sizes.join(", "))}</div></td>
+                <td>${escapeHtml(it.category)}</td>
+                <td>${money(it.price)}</td>
+                <td>
+                  <div class="qty">
+                    <button type="button" onclick="changeQty('${it.id}',-1)" aria-label="Decrease quantity">−</button>
+                    <strong>${it.qty}</strong>
+                    <button type="button" onclick="changeQty('${it.id}',1)" aria-label="Increase quantity">+</button>
+                  </div>
+                </td>
+                <td><strong>${money(it.price * it.qty)}</strong></td>
+                <td><button class="btn" type="button" onclick="removeFromCart('${it.id}')">Remove</button></td>
+              </tr>
+            `,
+              )
+              .join("")}
+          </tbody>
+        </table>
+      `;
+
+        document.getElementById("cartTotal").textContent = money(cartTotal());
+      }
+
+      function quickEnquiry(id) {
+        const p = PRODUCTS.find((x) => x.id === id);
+        if (!p) return;
+
+        const msg = `Hello ${SHOP_NAME},
+I would like to enquire about:
+• ${p.name} (${p.gsm})
+• Size(s): ${p.sizes.join(", ")}
+Please share availability, brands, and final price.
+
+My name: ______
+Phone: ______`;
+
+        window.open(buildWhatsAppLink(msg), "_blank");
+      }
+
+      function checkoutWhatsApp() {
+        const items = cartItems();
+        if (items.length === 0) {
+          toast("Cart is empty");
+          return;
+        }
+
+        const lines = items.map(
+          (it) =>
+            `• ${it.name} (${it.gsm}) — Qty: ${it.qty} — Est: ${money(it.price * it.qty)}`,
+        );
+        const msg = `Hello ${SHOP_NAME},
+I want to place an order / confirm availability.
+
+Cart items:
+${lines.join("\n")}
+
+Estimated total: ${money(cartTotal())}
+GSTIN needed? (Yes/No): ____
+Delivery/Pickup: ____
+
+Name: ____
+Phone: ____`;
+
+        window.open(buildWhatsAppLink(msg), "_blank");
+      }
+
+      // =========================
+      // FORMS → WHATSAPP
+      // =========================
+      function setupForms() {
+        document.getElementById("bulkForm").addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("bName").value.trim();
+          const biz = document.getElementById("bBiz").value.trim();
+          const phone = document.getElementById("bPhone").value.trim();
+          const details = document.getElementById("bDetails").value.trim();
+
+          const msg = `Hello ${SHOP_NAME},
+Bulk quote request:
+
+Name: ${name}
+Business/School: ${biz || "-"}
+Phone: ${phone}
+
+Requirements:
+${details}
+
+Please share best price and availability.`;
+
+          window.open(buildWhatsAppLink(msg), "_blank");
+        });
+
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = document.getElementById("cName").value.trim();
+            const phone = document.getElementById("cPhone").value.trim();
+            const msg = document.getElementById("cMsg").value.trim();
+
+            const wa = `Hello ${SHOP_NAME},
+Message from website:
+
+Name: ${name}
+Phone: ${phone}
+
+Message:
+${msg}`;
+
+            window.open(buildWhatsAppLink(wa), "_blank");
+          });
+      }
+
+      // =========================
+      // MINI CATALOG DOWNLOAD
+      // =========================
+      function downloadMiniCatalog() {
+        const text = `${SHOP_NAME}
+Owner: ${OWNER}
+Phone: ${PHONE_DISPLAY}
+GSTIN: ${GSTIN}
+Address: ${ADDRESS}
+
+PRODUCTS (Demo list)
+${PRODUCTS.map((p) => `- ${p.name} | ${p.category} | ${p.gsm} | Sizes: ${p.sizes.join(", ")} | Est: ${money(p.price)}`).join("\n")}
+
+Note: Prices are indicative. Confirm availability & final price via WhatsApp.`;
+
+        const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "SriTrishulPaperProduct-Catalog.txt";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        toast("Catalog downloaded");
+      }
+
+      // =========================
+      // TOAST
+      // =========================
+      let toastTimer = null;
+      function toast(message) {
+        let el = document.getElementById("toast");
+        if (!el) {
+          el = document.createElement("div");
+          el.id = "toast";
+          el.style.position = "fixed";
+          el.style.left = "50%";
+          el.style.bottom = "18px";
+          el.style.transform = "translateX(-50%)";
+          el.style.padding = "12px 14px";
+          el.style.borderRadius = "14px";
+          el.style.background = "rgba(46,46,46,.90)";
+          el.style.color = "white";
+          el.style.fontWeight = "700";
+          el.style.fontSize = "13px";
+          el.style.boxShadow = "0 18px 60px rgba(0,0,0,.25)";
+          el.style.zIndex = "300";
+          el.style.opacity = "0";
+          el.style.transition = "opacity .18s ease, transform .18s ease";
+          document.body.appendChild(el);
+        }
+        el.textContent = message;
+        el.style.opacity = "1";
+        el.style.transform = "translateX(-50%) translateY(-2px)";
+
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          el.style.opacity = "0";
+          el.style.transform = "translateX(-50%) translateY(0px)";
+        }, 1400);
+      }
+
+      // =========================
+      // INIT + EVENTS
+      // =========================
+      function init() {
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // top/bottom WhatsApp links
+        const defaultMsg = `Hello ${SHOP_NAME}, I would like to know about paper products and pricing.`;
+        const waLink = buildWhatsAppLink(defaultMsg);
+
+        document.getElementById("waTop").href = waLink;
+        document.getElementById("waBottom").href = waLink;
+        document.getElementById("fabWa").href = waLink;
+
+        // open maps
+        document.getElementById("openMapsBtn").href =
+          `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAPS_QUERY)}`;
+
+        // cart controls
+        document.getElementById("cartBtn").addEventListener("click", openCart);
+        document.getElementById("fabCart").addEventListener("click", openCart);
+        document
+          .getElementById("closeCartBtn")
+          .addEventListener("click", closeCart);
+        document.getElementById("cartModal").addEventListener("click", (e) => {
+          if (e.target.id === "cartModal") closeCart();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeCart();
+        });
+
+        document
+          .getElementById("clearCartBtn")
+          .addEventListener("click", clearCart);
+        document
+          .getElementById("checkoutBtn")
+          .addEventListener("click", checkoutWhatsApp);
+
+        // toolbar
+        document
+          .getElementById("searchInput")
+          .addEventListener("input", (e) => {
+            state.search = e.target.value;
+            renderProducts();
+          });
+        document
+          .getElementById("categorySelect")
+          .addEventListener("change", (e) => {
+            state.category = e.target.value;
+            renderProducts();
+          });
+        document
+          .getElementById("sortSelect")
+          .addEventListener("change", (e) => {
+            state.sort = e.target.value;
+            renderProducts();
+          });
+
+        // chips that filter categories
+        document.querySelectorAll("[data-filter]").forEach((el) => {
+          el.addEventListener("click", () =>
+            setCategory(el.getAttribute("data-filter")),
+          );
+        });
+
+        // address copy
+        document
+          .getElementById("copyAddressBtn")
+          .addEventListener("click", async () => {
+            try {
+              await navigator.clipboard.writeText(
+                `${SHOP_NAME}\n${ADDRESS}\nPhone: ${PHONE_DISPLAY}`,
+              );
+              toast("Address copied");
+            } catch (e) {
+              toast("Copy not supported");
+            }
+          });
+
+        // mini catalog
+        document
+          .getElementById("downloadCatalogBtn")
+          .addEventListener("click", downloadMiniCatalog);
+
+        // forms
+        setupForms();
+
+        // initial renders
+        updateCartBadge();
+        renderProducts();
+      }
+
+      // expose for inline handlers
+      window.addToCart = addToCart;
+      window.quickEnquiry = quickEnquiry;
+      window.changeQty = changeQty;
+      window.removeFromCart = removeFromCart;
+
+      init();
+    </script>
+  </body>
+</html>
+ssss
